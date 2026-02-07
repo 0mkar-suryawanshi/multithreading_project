@@ -1,4 +1,4 @@
-package Multithreading_Project;
+package Multithreading_Project.Single_Threaded;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,6 +26,7 @@ public class Server {
                 toClient.close();
                 fromClient.close();
                 acceptedConnection.close();
+                socket.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
